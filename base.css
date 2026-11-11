@@ -1,0 +1,31 @@
+:root {
+  /* Colores base del sistema */
+  --color-primario: #6C6F4E;
+  --color-secundario: #D6CE93;
+  --color-terciario: #BB8588;
+  --color-neutro: #23261D;
+
+  /* Fondos */
+  --fondo-general: #F6F5E4;
+  --fondo-tarjetas: #FCFBF3;
+  --fondo-panel-lateral: #E9E8D9;
+  --fondo-inputs: #EEEDE0;
+  --fondo-etiquetas: #ECEBDA;
+  --fondo-avisos: #F6F0D6;
+
+  /* Textos */
+  --texto-titulos: #1C1D15;
+  --texto-parrafos: #46483C;
+  --texto-secundario: #6A6C5C;
+  --texto-placeholder: #8B8C7D;
+
+  /* Botones */
+  --boton-principal: #61643F;
+  --boton-principal-texto: #FFFFFF;
+  --boton-oscuro: #565B2B;
+  --boton-alerta: #8F5B5F;
+
+  /* Bordes y detalles */
+  --borde: #DCDBCB;
+  --indicador-activo: #5E6236;
+}
