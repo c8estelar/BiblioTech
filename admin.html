@@ -9,7 +9,7 @@
     <title>Administrador Autentico</title>
 </head>
 
-<body>
+<body class="administrador">
     <header class="admi">
         <nav class="navbar navbar-dark">
             <div class="container">
@@ -18,10 +18,10 @@
                         <img src="img/Logotipo Bibliotech con birrete y borla.png" alt="Logo BiblioTech" height="60">
                     </div>
                     <div class="col-6 text-center">
-                        <h1 class="h4 text-white mb-0">Panel de Administración</h1>
+                        <h1 class="h2 mb-0"><strong>Panel de Administrador</strong> </h1>
                     </div>
                     <div class="col-3 text-end">
-                        <a href="login.html" class="btn btn-outline-light btn-sm">Cerrar sesión</a>
+                        <a href="login.html" class="btn btn-outline-dark ">Cerrar sesión</a>
                     </div>
 
                 </div>
@@ -49,7 +49,8 @@
 
                         <div class="col-md-6">
                             <label for="portada" class="form-label">Portada (URL)</label>
-                            <input type="url" id="portada" class="form-control" placeholder="https://www.suneo.mx/literatura/subidas/Umberto%20Eco%20El%20Nombre%20de%20la%20Rosa.pdf">
+                            <input type="url" id="portada" class="form-control"
+                                placeholder="https://www.suneo.mx/literatura/subidas/Umberto%20Eco%20El%20Nombre%20de%20la%20Rosa.pdf">
                         </div>
 
                         <div class="col-md-6">
@@ -121,6 +122,62 @@
                                 <td>
                                     <button type="button" class="btn btn-editar btn-sm">Editar</button>
                                     <button type="button" class="btn btn-eliminar btn-sm">Eliminar</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5 class="mb-0">Solicitudes de préstamo recibidas</h5>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped align-middle">
+                        <thead class="libros">
+                            <tr>
+                                <th>Lector</th>
+                                <th>Correo</th>
+                                <th>Libro solicitado</th>
+                                <th>Fecha</th>
+                                <th>Estado</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>María Gómez</td>
+                                <td>maria@correo.com</td>
+                                <td>Cien años de soledad</td>
+                                <td>10/11/2026</td>
+                                <td><span class="badge text-bg-warning">Pendiente</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-editar btn-sm">Aprobar</button>
+                                    <button type="button" class="btn btn-eliminar btn-sm">Rechazar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Carlos Ruiz</td>
+                                <td>carlos@correo.com</td>
+                                <td>El principito</td>
+                                <td>09/11/2026</td>
+                                <td><span class="badge text-bg-success">Aprobada</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-editar btn-sm" >Aprobar</button>
+                                    <button type="button" class="btn btn-eliminar btn-sm" >Rechazar</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Laura Pérez</td>
+                                <td>laura@correo.com</td>
+                                <td>Breve historia del tiempo</td>
+                                <td>08/11/2026</td>
+                                <td><span class="badge text-bg-danger">Rechazada</span></td>
+                                <td>
+                                    <button type="button" class="btn btn-editar btn-sm" >Aprobar</button>
+                                    <button type="button" class="btn btn-eliminar btn-sm" >Rechazar</button>
                                 </td>
                             </tr>
                         </tbody>
