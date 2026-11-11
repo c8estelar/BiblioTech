@@ -1,3 +1,20 @@
 .admi{
     background-color: #D6CE93;
 }
+.btn-biblio{
+    background-color: #6C6F4E;
+    color: white;
+}
+.btn-cancel{
+    border: 2px;
+}
+.btn-eliminar{
+    background-color: #BB8588;
+}
+.btn-editar{
+    background-color: #D6CE93;
+}
+.libros th{
+    background-color: #D6CE93;
+    color: #6C6F4E;
+}
