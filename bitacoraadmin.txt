@@ -1,0 +1,15 @@
+Administración (admin.html):
+Administrador autenticado	
+Consultar una tabla de libros con botones de acción (simulados), 
+el formulario para agregar o editar, y la tabla de solicitudes recibidas.
+
+
+Un formulario con campos de Título, Autor, Portada (URL), Descripción y Categoría (Select).
+Botones de acción "Guardar" y "Cancelar".
+Una tabla HTML estática que contenga la lista de libros de ejemplo, con columnas para Portada, 
+Título, Autor, Categoría y Acciones (botones visuales de Editar y Eliminar).
+
+El formulario permite agregar todos los campos solicutados pero los botones no tienen funcionalidad.
+
+la seccion de administrador cumpliria con permitir, gestionar y modificar la seccion de libros.
+
