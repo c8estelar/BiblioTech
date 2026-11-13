@@ -1,5 +1,12 @@
 @import url(./base.css);
 
 *{
-    
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fondo-general);
+    color: var(--texto-parrafos);
+    font-family: var(--fuente-titulos), var(--fuente-texto);
+    font-size: 14px;
 }
