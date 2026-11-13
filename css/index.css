@@ -10,3 +10,9 @@ body {
     font-family: var(--fuente-titulos), var(--fuente-texto);
     font-size: 14px;
 }
+
+h1,h2,h3 {
+    color:var(--texto-titulos);
+    font-family: var(--fuente-titulos);
+    font-weight: 500;
+}
