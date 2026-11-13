@@ -1,3 +1,7 @@
+@import url(.css/base.css);
+body{
+    font-family:var(--fuente-titulos),var(--fuente-texto);
+}
 .administrador{
     background-color: #e3dca1 ;
 }
