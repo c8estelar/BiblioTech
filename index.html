@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Catálogo, servicios y actividades de la Biblioteca BiblioTech.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"><!--librería de botones-->
+    <link rel="stylesheet" href="./css/index.css">
     <title>BiblioWeb | catálogo biblioteca</title>
 </head>
 
@@ -16,7 +17,6 @@
             <div class="container">
                 <a class="navbar-top top" href="./index.html">
                     <img src="./img/bibliotech_fondo_transparente.webp" alt="logo bibliotech">
-                    <span>BiblioTech</span>
                 </a>
 
                 <button class="navbar-botoncit" type="button" data-bs-toggle="collapse"
@@ -49,12 +49,12 @@
 
     <main>
         <section class="container seccion-ppal" id="inicio">
-            <div id="carrusel" data-bs-ride="carrusel" class="carrusel-slide">
-                <div class="carrusel-indicators">
-                    <button type="button" data-bs-target="#¿quehaceestooooo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Primera imagen"></button>
-                    <button type="button" data-bs-target="#quehaceestonumero2" data-bs-slide-to="1" aria-label="imagen 2"></button>
-                    <button type="button" data-bs-target="#quehaceestooo" data-bs-slide-to="2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+            <div id="carousel" data-bs-ride="carousel" class="carousel slide carousel-fade">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Primera imagen"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="imagen 2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
                     
                 </div>
                 <div class="carousel-inner">
@@ -67,7 +67,7 @@
                             <a href="#servicios" class="btn primary-button">Conocer las actividades</a>
                         </div>
                     </div>
-                    <div class="carrusel-item">
+                    <div class="carousel-item">
                         <img src="./img/carrusel-i2.jpeg" alt="Sala de lectura rodeada de estanterías" class="d-block w-100">
                         <div class="hero-contenido">
                             <span class="minititulo">Biblioteca para la comunidad</span>
@@ -76,7 +76,7 @@
                             <a href="#horarios" class="btn primary-button">Consultar horarios</a>
                         </div>
                     </div>
-                    <div class="carrusel-item">
+                    <div class="carousel-item">
                         <img src="./img/carrusel-i3.jpeg" alt="Libros y una taza en una mesa de lectura" class="d-block w-100">
                         <div class="hero-contenido">
                             <span class="minititulo">Narrativa y ficción</span>
@@ -85,7 +85,7 @@
                             <a href="#recomendaciones" class="btn primary-button">Ver colección de ficción</a>
                         </div>
                     </div>
-                    <div class="carrusel-item">
+                    <div class="carousel-item">
                         <img src="./img/carrusel-i4.jpeg" alt="Libros abiertos en una mesa de estudio" class="d-block w-100">
                         <div class="hero-contenido">
                             <span class="minititulo">Un espacio para descubrir</span>
@@ -96,11 +96,12 @@
                     </div>
                 </div>
 
-                <button class="carrusel-prev" type="button" data-bs-target="idkqueesestoOOOo" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                     <span class="carrusel-prev-icon" aria-hidden="true"></span>
                     <span class="escondido">Prev</span>
                 </button>
-                <button class="carrusel-next" type="button" data-bs-target="idkqueesestoOOOo" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <!--los data-bs-target es lo que apunta a un parámetro u otro, por ejemplo, wn este caso estamos en la sección que genera el carrusel, al principio de la sección está el parámetro data-bs-RIDE con el atributo de carousel, los data-bs-target hacen como un href cuando se le pone el # y lo refieren al ride que funciona como un id de lo que se está haciendo, idk jekj-->
                     <span class="carrusel-next-icon" aria-hidden="true"></span>
                     <span class="escondido">Sig.</span>
                 </button>
@@ -178,12 +179,73 @@
                 <p>Accede a todos nuestros recursos con tu carné municipal o solicita pases de lectura e investigación sin costo.</p>
                 <div class="tarjetas-servicios">
                     <article class="card-servicio">
-                        <span><i class="bi bi-search"></i> <i class="bi bi-basket2"></i>hola jej</span>
+                        <span><i class="bi bi-bicycle"></i></span>
+                        <span class="titulito-servicios tag-verde">Préstamos activos</span>
+                        <h3>Préstamos a domicilio</h3>
+                        <p>Hasta 3 libros durante 15 días con posibilidad de renovación online sin necesidad de desplazarse.</p>
+                        <a href="#">Consulta la normativa y plazos de devolución.</a>
+                        <!--AÑADIR UN MODAL CON NORMATIVA SIMULADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
                     </article>
+                    <article class="card-servicio">
+                        <span><i class="bi bi-person-video3"></i></span>
+                        <span class="titulito-servicios tag-amarillo">Zona silenciosa</span>
+                        <h3>Salas de estudio y co-working</h3>
+                        <p>Espacios silenciosos con wifi de alta velocidad, enchufes individuales en cada puesto y cabinas acústicas para llamadas breves.</p>
+                        <a href="#">Reservar un puesto.</a>
+                        <!--AÑADIR UN MODAL CON NORMATIVA SIMULADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+                    </article>
+                    <article class="card-servicio">
+                        <span><i class="bi bi-person-video3"></i></span>
+                        <span class="titulito-servicios tag-rosadito">Esparcimiento y dinamización</span>
+                        <h3>Club de lectura y talleres</h3>
+                        <p>Encuentros semanales para todas las edades, clubes de debate, talleres de escritura creativa y cuenta cuentos infantiles.</p>
+                        <a href="#">Agenda de actividades</a>
+                        <!--AÑADIR UN MODAL CON NORMATIVA SIMULADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+                    </article>      
+                    <article class="card-servicio">
+                        <span><i class="bi bi-person-video3"></i></span>
+                        <span class="titulito-servicios tag-nice">Acceso libre</span>
+                        <h3>Hemeroteca y digitales</h3>
+                        <p>Periódicos diarios locales y nacionales, revistas científicas, préstamos de e-readers y computadores de consulta multimedia gratuita.</p>
+                        <a href="#">Recusos disponibles</a>
+                        <!--AÑADIR UN MODAL CON NORMATIVA SIMULADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
+                    </article>              
                 </div>
             </div>
         </section>
-        <!--VVVVVVVVVVVVVVVVVOY AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
+
+        <section class="container recomendaciones" id="recomendaciones">
+            <span class="titulito">Selección del equipo de bibliotecarios</span>
+            <div>
+                <h2>Recomendaciones destacadas de la semana</h2>
+                <p>Lecturas escogidas con esmero por nuestro personal técnico para despertar nuevas reflexiones en tu mesa de noche</p>
+            </div>
+            <a href="./catalgo.html" class="link">Ver el catálogo</a>
+        </section>
+
+        <section class="container prestamos">
+            <span class="titulito">trámite sencilo y gratuito</span>
+            <h2>¿Cómo funciona el préstamo de libros?</h2>
+            <p>Ten tu próxmia lectura en manos, en cuestión de tres sencillos pasos!</p>
+            <div class="pasos">
+                <article>
+                    <span class="numero-paso">1</span>
+                    <h3>Elige en el catálogo</h3>
+                    <p>Explora en línea nuestro fondo bibliográfico, consulta la disponibilidad en tiempo real y revisa sinopsis o críticas.</p><small>+25.000 títulos</small>
+                </article>
+                <article>
+                    <span class="numero-paso">2</span>
+                    <h3>Completa la solicitud</h3>
+                    <p>Haz clic en "Reservar" o solicita tu ejemplar directamente en el mostrador si nos visitas en persona.</p><small>Reserva inmediata</small>
+                </article>
+                <article>
+                    <span class="numero-paso">3</span>
+                    <h3>Retira con tu DNI</h3>
+                    <p>Acércate al mostrador principal con tu documento de identidad o carné digital de lector para llevarte los libros a casa!</p><small>15 días renovables.</small>
+                </article>
+            </div>
+            <a href="#" class="btn primary-button"><i class="bi bi-person-vcard"></i>Solicitar carné gratuito</a>
+        </section>
     </main>
 
     <!--ARREGLAR ESTE FOOTER PARA QUE QUEDE LINDOOOOOOOOOOOOO-->
