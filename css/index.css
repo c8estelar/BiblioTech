@@ -38,6 +38,11 @@ p {
     display: block;
     width: 70px;
     height: 60px;
-    object-fit: cover;
-    
+    object-fit: cover;    
+}
+
+.btn.btn-sm:hover {
+    background-color: var(--boton-principal);
+    border-radius: 90px;
+    color: var(--boton-principal-texto);
 }
