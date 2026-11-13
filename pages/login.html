@@ -7,69 +7,76 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
-        <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
- 
-        <div class="container pt-3 pb-3">
-            <div class="row g-0">
-                <div class="col-md-4 offset-md-2 d-flex">
-                    <div class="card mt-5 h-100" id="leftcard">
-                        <div class="card-body">
-                            <div id="headleft">
-                                <img src="../img/bibliotech_fondo_transparente.webp" alt="" id="bibliologo" class="img-fluid">
-                                <p>GESTION DE ARCHIVOS</p>
-                                <p>SISTEMA CENTRAL</p>
-                            </div>
-                            <div>
-                                
-                                <p>Custodia, orde y saber compartido.</p>
-                                <p>plataforma interna para la catalogación decimal, control de volumenes en prestamo y
-                                    curaduria comunitaria</p>
-                            </div>
-                            <img src="../img/Gemini_Generated_Image_86yiuh86yiuh86yi.jpeg" alt="fondo historico y Sala general" class="img-fluid">
 
-                            <div>
-                                <p><strong>Red Municipal Protegida</strong>
-                                <p><strong>Protocolo de cifrado TLS 1.3 activo</strong></p>
-                            </div>
+    <div class="container pt-3 pb-3">
+        <div class="row g-0">
+            <div class="col-md-4 offset-md-2 d-flex">
+                <div class="card mt-5 h-100" id="leftcard">
+                    <div class="card-body">
+                        <div id="headleft">
+                            <img src="../img/Logotipo Bibliotech con birrete y borla.png" alt="" id="bibliologo"
+                                class="img-fluid">
+                            <p>GESTION DE ARCHIVOS</p>
+                            <p>SISTEMA CENTRAL</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex">
-                    <div class="card mt-5 h-100  " id="rightcard">
-                        <div class="card-body">
-                            <div>
-                            <p>MODULO 01 AUTENTICACION</p>
-                            <p>En linea</p>
-                            </div>
+                        <div>
 
-                            <h1><strong>Acceso Administrativo</strong></h1>
-                            <p>Ingresa tus credenciales del personal de la biblioteca para gestionar el catalogo y las solicitudes de prestamo</p>
-                            <form action="">
-                                <div class="mt-4">
-                                    <label for="email">usuario o correo institucional</label>
-                                    <input type="email" class="form-control" id="email" placeholder="admin@bibliotech.org" required>
-                                </div>
-                                <div class="mt-4">
-                                    <label for="password">Contraseña o Acceso</label>
-                                    <input type="password" class="form-control" id="password" placeholder="************" required>
-                                    <input type="checkbox"><p>Mantener sesion iniciada en este equipo</p>
-                                </div>
-                                <hr>
-                                <button type="button" onclick="login()" class="btn btn-primary w-100">Iniciar Sesion como Administrador</button>
-                            </form>
-                            <div>
-                                <a href="../index.html">Volver al catalogo</a>
-                            </div>
+                            <p>Custodia, orde y saber compartido.</p>
+                            <p>plataforma interna para la catalogación decimal, control de volumenes en prestamo y
+                                curaduria comunitaria</p>
+                        </div>
+                        <img src="../img/Gemini_Generated_Image_86yiuh86yiuh86yi.jpeg"
+                            alt="fondo historico y Sala general" class="img-fluid">
 
+                        <div>
+                            <p><strong>Red Municipal Protegida</strong>
+                            <p><strong>Protocolo de cifrado TLS 1.3 activo</strong></p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-md-4 d-flex">
+                <div class="card mt-5 h-100  " id="rightcard">
+                    <div class="card-body">
+                        <div>
+                            <p>MODULO 01 AUTENTICACION</p>
+                            <p>En linea</p>
+                        </div>
+
+                        <h1><strong>Acceso Administrativo</strong></h1>
+                        <p>Ingresa tus credenciales del personal de la biblioteca para gestionar el catalogo y las
+                            solicitudes de prestamo</p>
+                        <form action="">
+                            <div class="mt-4">
+                                <label for="email">usuario o correo institucional</label>
+                                <input type="email" class="form-control" id="email" placeholder="admin@bibliotech.org"
+                                    required>
+                            </div>
+                            <div class="mt-4">
+                                <label for="password">Contraseña o Acceso</label>
+                                <input type="password" class="form-control" id="password"
+                                    required>
+                                <input type="checkbox">
+                                <p>Mantener sesion iniciada en este equipo</p>
+                            </div>
+                            <hr>
+                            <button type="button" onclick="login()" class="btn btn-primary w-100">Iniciar Sesion como
+                                Administrador</button>
+                        </form>
+                        <div>
+                            <a href="../index.html">Volver al catalogo</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
     </header>
     <script src="../script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
