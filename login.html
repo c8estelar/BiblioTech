@@ -10,43 +10,59 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a href="./index.html">Inicio</a>
-            <a href="">Cátalogo</a>
-            <a href="">Login (Administración)</a>
-        </nav>
-        <div class="container-fluid">
+ 
+        <div class="container pt-3 pb-3">
             <div class="row">
-                <div class="col-md-1 h-20 w-20">
-                    <img src="./img/1_logoimg2.png" alt="logocatálogo biblib" width="100" height="100">
-                </div>
-                <div class="col-md-6">
-                    <h1>BiblioTech</h1>
-                    <p>Catálogo y administración de una biblioteca.</p>
-                </div>
-                <div class="col-md-3">
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 offset-md-4 ">
-                    <div class="card mt-5">
+                <div class="col-md-4 offset-md-2 d-flex">
+                    <div class="card mt-5 h-100">
                         <div class="card-body">
+                            <div>
+                                <h2>bibliotech</h2>
+                                <p>GESTION DE ARCHIVOS</p>
+                            </div>
+                            <div>
+                                <p>SISTEMA CENTRAL</p>
+                                <p>sistema central</p>
+                                <p>Custodia, orde y saber compartido.</p>
+                                <p>plataforma interna para la catalogación decimal, control de volumenes en prestamo y
+                                    curaduria comunitaria</p>
+                            </div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBfsihCjIV5Ok98Nq7kuvkzQdj0amGaw4zHjtUfkyKgg&s=10" alt="fondo historico y Sala general" class="img-fluid">
+
+                            <div>
+                                <p><strong>Red Municipal Protegida</strong>
+                                <p><strong>Protocolo de cifrado TLS 1.3 activo</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="card mt-5 h-100  ">
+                        <div class="card-body">
+                            <div>
+                            <p>MODULO 01 AUTENTICACION</p>
+                            <p>En linea</p>
+                            </div>
+
+                            <h1><strong>Acceso Administrativo</strong></h1>
+                            <p>Ingresa tus credenciales del personal de la biblioteca para gestionar el catalogo y las solicitudes de prestamo</p>
                             <form action="">
                                 <div class="mt-4">
-                                    <label for="email">correo electronico</label>
-                                    <input type="email" class="form-control" id="email">
+                                    <label for="email">usuario o correo institucional</label>
+                                    <input type="email" class="form-control" id="email" placeholder="admin@bibliotech.org">
                                 </div>
                                 <div class="mt-4">
-                                    <label for="password">correo electronico</label>
+                                    <label for="password">Contraseña o Acceso</label>
                                     <input type="password" class="form-control" id="password">
+                                    <input type="checkbox"><p>Mantener sesion iniciada en este equipo</p>
                                 </div>
                                 <hr>
-                                <button type="button" onclick="login()" class="btn btn-primary w-100">login</button>
+                                <button type="button" onclick="login()" class="btn btn-primary w-100">Iniciar Sesion como Administrador</button>
                             </form>
+                            <div>
+                                <a href="">Volver al catalogo</a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
