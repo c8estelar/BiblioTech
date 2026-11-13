@@ -13,7 +13,7 @@ function login(){
 function verificarlogin(){
     autenticacion = sessionStorage.getItem("auth")
     if(autenticacion != "true");
-    window.location = "./login.html"; 
+    window.location = "./login.html";
 }
 function salir(){
     sessionStorage.clear();
