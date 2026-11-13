@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo, servicios y actividades de la Biblioteca BiblioTech.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>BiblioWeb | catálogo biblioteca</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-top top" href="./index.html">
+                    <img src="./img/bibliotech_fondo_transparente.webp" alt="logo bibliotech">
+                    <span>BiblioTech</span>
+                </a>
+
+                <button class="navbar-botoncit" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navegacion-principal">
+                    <span class="navbar-botoncit-icon"></span><!--ICONITO DE NAVBAR-->
+                </button>
+
+                <div class="collapse navbar-collapse" id="navegacion-principal">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                        <li class="elementop">
+                            <a href="#inicio" class="link-nav">Inicio</a>
+                        </li>
+                        <li class="elementop">
+                            <a href="#recomendaciones" class="link-nav">Catálogo de libros</a>
+                        </li>
+                        <li class="elementop">
+                            <a href="#horarios" class="link-nav">Servicios y horarios</a>
+                        </li>
+                        <li class="elementop">
+                            <a href="#ubicacion" class="link-nav">Ubicación</a>
+                        </li>
+                        <li class="elementop">
+                            <a href="./admin.html" class="link-nav">Admin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container seccion-ppal" id="inicio">
+            <div id="carrusel" data-bs-ride="carrusel" class="carrusel-slide">
+                <div class="carrusel-indicators">
+                    <button type="button" data-bs-target="#¿quehaceestooooo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Primera imagen"></button>
+                    <button type="button" data-bs-target="#quehaceestonumero2" data-bs-slide-to="1" aria-label="imagen 2"></button>
+                    <button type="button" data-bs-target="#quehaceestooo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+                    
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/carrusel-i1.jpeg" alt="club de lectura" class="d-block w-100">
+                        <div class="hero-contenido">
+                            <span class="minititulo">Comunidad activa</span>
+                            <h2>Únete a nuestro club de lectura</h2>
+                            <p>Tertulias, análisis de clásicos y encuentros abiertos para compartir lecturas.</p>
+                            <a href="#servicios" class="btn primary-button">Conocer las actividades</a>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="./img/carrusel-i2.jpeg" alt="Sala de lectura rodeada de estanterías" class="d-block w-100">
+                        <div class="hero-contenido">
+                            <span class="minititulo">Biblioteca para la comunidad</span>
+                            <h2>Leer, aprender y compartir</h2>
+                            <p>Un espacio acogedor con recursos y servicios para toda la comunidad.</p>
+                            <a href="#horarios" class="btn primary-button">Consultar horarios</a>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="./img/carrusel-i3.jpeg" alt="Libros y una taza en una mesa de lectura" class="d-block w-100">
+                        <div class="hero-contenido">
+                            <span class="minititulo">Narrativa y ficción</span>
+                            <h2>Grandes historias para soñar en voz alta.</h2>
+                            <p>Nuevas adquisiciones literarias de autores nacionales e internacionales</p>
+                            <a href="#recomendaciones" class="btn primary-button">Ver colección de ficción</a>
+                        </div>
+                    </div>
+                    <div class="carrusel-item">
+                        <img src="./img/carrusel-i4.jpeg" alt="Libros abiertos en una mesa de estudio" class="d-block w-100">
+                        <div class="hero-contenido">
+                            <span class="minititulo">Un espacio para descubrir</span>
+                            <h2>Encuentra tu próxima lectura.</h2>
+                            <p>Explora el catálogo y descubre libros para todas las edades.</p>
+                            <a href="#recomendaciones" class="btn primary-button">Explorar las recomendaciones</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carrusel-prev" type="button" data-bs-target="idkqueesestoOOOo" data-bs-slide="prev">
+                    <span class="carrusel-prev-icon" aria-hidden="true"></span>
+                    <span class="escondido">Prev</span>
+                </button>
+                <button class="carrusel-next" type="button" data-bs-target="idkqueesestoOOOo" data-bs-slide="next">
+                    <span class="carrusel-next-icon" aria-hidden="true"></span>
+                    <span class="escondido">Sig.</span>
+                </button>
+            </div>
+
+            <form action="./catalgo.html" role="search" class="busqueda">
+                <label for="catalogo" class="escondido">Buscar en catálogo</label>
+                <input type="search" id="catalogo" placeholder="Encuentra libros por título, autor o materia">
+                <button type="submit" class="btn primary-button">Buscar</button>
+            </form>
+
+            <div class="descubrir">
+                <a href="#recomendaciones"><span><small>Destacado</small>Mundos infinitos</span></a>
+                <a href="#recomendaciones"><span><small>Novedad</small>Ficción actual</span></a>
+                <a href="#recomendaciones"><span><small>Archivo</small>Ciencia y saber</span></a>
+                <a href="servicios"><span><small>Talleres</small>Club de lectura</span></a>
+            </div>
+                <!--VVVVVVVVVVVVVVVVVOY AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->            
+
+            <form class="búsqueda" role="search" action="./catalgo.html">
+                <label for="b_catalogo" class="escondido">Buscar en el catálogo</label>
+                <input type="search" id="b_catalogo" name="q"
+                    placeholder="Encuentra libros por título, autor o materia">
+                <button type="submit" class="btn primary-button">Buscar</button>
+            </form>
+
+            <div class="links-descubr">
+                <a href="#recomendaciones"><span>01</span><span><small>Destacado</small>Mundos infinitos</span></a>
+                <a href="#recomendaciones"><span>02</span><span><small>Novedad</small>Ficción actual</span></a>
+                <a href="#recomendaciones"><span>03</span><span><small>Archivo</small>Ciencia y saber</span></a>
+                <a href="#servicios"><span>04</span><span><small>Talleres</small>Club de lectura</span></a>
+            </div>
+        </section>
+
+        <section class="container info" id="horarios">
+            <article class="info-card">
+                <div class="card-atencion">
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!--ARREGLAR ESTE FOOTER PARA QUE QUEDE LINDOOOOOOOOOOOOO-->
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h2 class="footer-brand"><img src="./img/bibliotech_fondo_transparente.webp" alt=""> BiblioTech</h2>
+                    <p>Biblioteca Municipal y Comunitaria. Un refugio de conocimiento, lectura compartida y dinamización cultural para toda la ciudadanía.</p>
+                    <!--Incluir un iconito de check y luego la letra a continuación-->
+                    <p class="network-note">; Red Municipal de Bibliotecas y Archivos</p>
+                </div>
+                <div>
+                    <h3>Horarios de Atención</h3>
+                    <!--Iconito de reloj-->
+                    <p class="footer-label">; Lunes a Sábado</p>
+                    <p>08:00 - 20:00 hrs</p>
+                    <!--iconito de reloj dasi-->
+                    <p class="footer-label">; Domingos</p>
+                    <p>10:00 - 14:00 hrs</p>
+                </div>
+                <div>
+                    <h3>Enlaces Rápidos</h3>
+                    <a href="#inicio">Inicio</a>
+                    <a href="./catalgo.html">Catálogo de libros</a>
+                    <a href="#horarios">Normativa de préstamos</a>
+                    <a href="#">Portal de Administración</a>
+                </div>
+                <div>
+                    <h3>Ubicación</h3>
+                    <!--iconito de ubicación-->
+                    <p>; Paseo Cultural 14, Plaza Mayor</p>
+                    <!--iconito de teléfono-->
+                    <a href="tel:+34912345678">; +34 912 345 678</a>
+                    <!--iconito de mail-->
+                    <a href="mailto:info@bibliotech.org">; info@bibliotech.org</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <!--Iconito de copyright seguido del siguiente texto-->
+                <p>© 2025 BiblioTech Biblioteca Municipal. Todos los derechos reservados.</p>
+                <div><a href="#">Políticas de Privacidad</a><a href="#">Términos de Servicio</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> <!--Según la guía que seguí, este script sirve para que el menú móvil y el carrusel funcionen normalmente-->
+</body>
+
+</html>
