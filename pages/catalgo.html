@@ -8,36 +8,33 @@
     <title>BiblioWeb | catálogo biblioteca</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-top top" href="../index.html">
-                    <img src="../img/bibliotech_fondo_transparente.webp" alt="logo bibliotech" class="img-fluid
-                    ">
-                    <span>BiblioTech</span>
+                <a class="navbar-brand brand" href="./index.html">
+                    <img src="./img/bibliotech_fondo_transparente.webp" alt="logo bibliotech">
                 </a>
 
-                <button class="navbar-botoncit" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navegacion-principal">
-                    <span class="navbar-botoncit-icon"></span>
+                    <span class="navbar-toggler-icon"></span><!--ICONITO DE NAVBAR-->
                 </button>
 
                 <div class="collapse navbar-collapse" id="navegacion-principal">
                     <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-                        <li class="elementop">
-                            <a href="#inicio" class="link-nav">Inicio</a>
+                        <li class="nav-item">
+                            <a href="#inicio" class="btn btn-sm">Inicio</a>
                         </li>
-                        <li class="elementop">
-                            <a href="#recomendaciones" class="link-nav">Catálogo de libros</a>
+                        <li class="nav-item">
+                            <a href="./pages/catalgo.html" class="btn btn-sm">Catálogo de libros</a>
                         </li>
-                        <li class="elementop">
-                            <a href="#horarios" class="link-nav">Servicios y horarios</a>
+                        <li class="nav-item">
+                            <a href="#horarios" class="btn btn-sm">Servicios y horarios</a>
                         </li>
-                        <li class="elementop">
-                            <a href="#ubicacion" class="link-nav">Ubicación</a>
+                        <li class="nav-item">
+                            <a href="#ubicacion" class="btn btn-sm">Ubicación</a>
                         </li>
-                        <li class="elementop">
-                            <a href="./admin.html" class="link-nav">Admin</a>
+                        <li class="nav-item">
+                            <a href="./pages/admin.html" class="btn btn-sm">Admin</a>
                         </li>
                     </ul>
                 </div>
@@ -300,6 +297,47 @@
                 </div>  
             </div>     
 
-        </section>
-            
+        </section>            
     </main>
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h2 class="footer-brand"><img src="./img/bibliotech_fondo_transparente.webp" alt=""> BiblioTech</h2>
+                    <p>Biblioteca Municipal y Comunitaria. Un refugio de conocimiento, lectura compartida y dinamización cultural para toda la ciudadanía.</p>
+                    <!--Incluir un iconito de check y luego la letra a continuación-->
+                    <p class="network-note">; Red Municipal de Bibliotecas y Archivos</p>
+                </div>
+                <div>
+                    <h3>Horarios de Atención</h3>
+                    <!--Iconito de reloj-->
+                    <p class="footer-label">; Lunes a Sábado</p>
+                    <p>08:00 - 20:00 hrs</p>
+                    <!--iconito de reloj dasi-->
+                    <p class="footer-label">; Domingos</p>
+                    <p>10:00 - 14:00 hrs</p>
+                </div>
+                <div>
+                    <h3>Enlaces Rápidos</h3>
+                    <a href="#inicio">Inicio</a>
+                    <a href="./pages/catalgo.html">Catálogo de libros</a>
+                    <a href="#horarios">Normativa de préstamos</a>
+                    <a href="./pages/admin.html">Portal de Administración</a>
+                </div>
+                <div>
+                    <h3>Ubicación</h3>
+                    <!--iconito de ubicación-->
+                    <p>; Paseo Cultural 14, Plaza Mayor</p>
+                    <!--iconito de teléfono-->
+                    <a href="tel:+573001230000">; +57 300 123 00 00</a>
+                    <!--iconito de mail-->
+                    <a href="mailto:info@bibliotech.org">; info@bibliotech.org</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <!--Iconito de copyright seguido del siguiente texto-->
+                <p>© 2025 BiblioTech Biblioteca Municipal. Todos los derechos reservados.</p>
+                <div><a href="#">Políticas de Privacidad</a><a href="#">Términos de Servicio</a></div>
+            </div>
+        </div>
+    </footer>
