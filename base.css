@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
-
-
 :root {
-   /* Fuentes */
+  /* Fuentes */
   --fuente-titulos: 'Merriweather', serif;
   --fuente-texto: 'Plus Jakarta Sans', sans-serif;
+
   /* Colores base del sistema */
   --color-primario: #6C6F4E;
   --color-secundario: #D6CE93;
@@ -12,12 +10,13 @@
   --color-neutro: #23261D;
 
   /* Fondos */
-  --fondo-general: #F6F5E4;
-  --fondo-tarjetas: #FCFBF3;
-  --fondo-panel-lateral: #E9E8D9;
-  --fondo-inputs: #EEEDE0;
-  --fondo-etiquetas: #ECEBDA;
-  --fondo-avisos: #F6F0D6;
+  --fondo-general: #F7F8E3;        /* antes #F6F5E4 */
+  --fondo-tarjetas: #FFFFFF;       /* antes #FCFBF3 */
+  --fondo-panel-lateral: #E8E9DB;  /* antes #E9E8D9 */
+  --fondo-inputs: #F3F5E6;         /* antes #EEEDE0 */
+  --fondo-etiquetas: #F3F5E6;      /* antes #ECEBDA */
+  --fondo-cajas-info: #EDEFE1;     /* nuevo: caja "Red Municipal Protegida" */
+  --fondo-avisos: #F8F4DC;         /* antes #F6F0D6 */
 
   /* Textos */
   --texto-titulos: #1C1D15;
@@ -28,7 +27,7 @@
   /* Botones */
   --boton-principal: #61643F;
   --boton-principal-texto: #FFFFFF;
-  --boton-oscuro: #565B2B;
+  --boton-oscuro: #65602F;         /* antes #565B2B */
   --boton-alerta: #8F5B5F;
 
   /* Bordes y detalles */
