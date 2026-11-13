@@ -5,7 +5,7 @@ function login(){
 
     if(email.value == "admin@biblioweb.test" &&password.value == "Admin123"){
         window.location ="./admin.html"
-        sessionStorage("auth","true")
+        sessionStorage.setItemgit("auth","true")
     }else{
         console.log("credenciales incorrectas")
     }
@@ -17,5 +17,5 @@ function verificarlogin(){
 }
 function salir(){
     sessionStorage.clear();
-    window.location = "./index.html"
+    window.location = "../index.html"
 }
