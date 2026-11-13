@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo, servicios y actividades de la Biblioteca BiblioTech.">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-
     <title>BiblioWeb | catálogo biblioteca</title>
 </head>
 
 <body>
-    <header class="site-header">
+    <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <a class="navbar-brand brand" href="./index.html"><img src="./img/bibliotech_fondo_transparente.webp"
-                        alt="Logo de bibliotech">
-
+                <a class="navbar-top top" href="./index.html">
+                    <img src="./img/bibliotech_fondo_transparente.webp" alt="logo bibliotech">
+                    <span>BiblioTech</span>
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navegación">
-
+                <button class="navbar-botoncit" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navegacion-principal">
+                    <span class="navbar-botoncit-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navegación">
-                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-                        <li class="nav-item">
-                            <a href="#inicio" class="nav-link active">Inicio</a>
+                <div class="collapse navbar-collapse" id="navegacion-principal">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                        <li class="elementop">
+                            <a href="#inicio" class="link-nav">Inicio</a>
                         </li>
-                        <li class="nav-item"><a href="#recomendaciones" class="nav-link">Catálogo de libros</a></li>
-                        <li class="nav-item"><a href="#horarios" class="nav-link">Horarios y Servicios</a></li>
-                        <li class="nav-item"><a href="#ubicacion" class="btn btn-sm quick button">Ubicación</a></li>
+                        <li class="elementop">
+                            <a href="#recomendaciones" class="link-nav">Catálogo de libros</a>
+                        </li>
+                        <li class="elementop">
+                            <a href="#horarios" class="link-nav">Servicios y horarios</a>
+                        </li>
+                        <li class="elementop">
+                            <a href="#ubicacion" class="link-nav">Ubicación</a>
+                        </li>
+                        <li class="elementop">
+                            <a href="./admin.html" class="link-nav">Admin</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -38,219 +48,201 @@
     </header>
 
     <main>
-        <section class="container hero-section" id="inicio">
-            <div id="carrusel" class="carousel slide hero-carousel" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2"></button>
+        <section class="container seccion-ppal" id="inicio">
+            <div id="carrusel" data-bs-ride="carrusel" class="carrusel-slide">
+                <div class="carrusel-indicators">
+                    <button type="button" data-bs-target=""></button>
+                    <!--VVVVVVVVVVVVVVVVVOY AQUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
                 </div>
-                <div class="carrusel-inner">
-                    <div class="item-carrusel active">
-                        <img src="./img/carrusel-i1.jpeg" alt="club de lectura" class="d-block w-100">
-                        <div class="hero-content">
-                            <span class="eyebrow">Comuidad activa</span>
-                            <h1>Únete a nuestro club de lectura semanal.</h1>
-                            <p>Tertulias vivas, análisis de clásicos y debates abiertos cada Miércoles a las 20:00h en
-                                Sala Room. ¡Inscripciones gratuitas!</p>
-                            <a href="#recomendaciones" class="btn primary-button">Inscribirse a los talleres.</a>
-                        </div>
-                    </div>
-                    <div class="item-carrusel">
-                        <img src="./img/carrusel-i2.jpeg" alt="libros en librería" class="d-block w-100">
-                        <div class="hero-content">
-                            <span class="eyebrow">Biblioteca para la comunidad</span>
-                            <h2>Leer, aprender y compartir.</h2>
-                            <p>Te esperamos con actividades y servicios para toda la comunidad.</p>
-                            <a href="#horarios" class="btn primary-button">Conocer los horarios.</a>
-                        </div>
-                    </div>
-                    <div class="item-carrusel">
-                        <img src="./img/carrusel-i3.jpeg" alt="libros puestos en una mesa" class="d-block w-100">
-                        <div class="hero-content">
-                            <span class="eyebrow">Narrativa y ficción</span>
-                            <h2>Grandes historias para soñar en voz alta.</h2>
-                            <p>Nuevas adquisiciones literarias de autores nacionales e internacionales.</p>
-                            <a href="#recomendaciones" class="btn primary-button">Ver colección de ficción.</a>
-                        </div>
-                    </div>
-                    <div class="item-carrusel">
-                        <img src="./img/carrusel-i4.jpeg" alt="escritorio con libros" class="d-block w-100">
-                        <div class="hero-content">
-                            <span class="eyebrow">Un espacio para descubrir</span>
-                            <h2>Encuentra tu próxima lectura</h2>
-                            <p>Explora el catálogo y descubre libros para todas las edades.</p>
-                            <a href="#recomendaciones" class="btn primary-button">Explorar recomendaciones.</a>
-                        </div>
-                    </div>
-                </div>
-                <button class="prev-carrusel" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
-                    <span class="iprev-carrusel"></span>
-                </button>
-                <button class="prox-carrusel" type="button" data-bs-target="#carrusel" data-bs-slide="next">
-                    <span class="iprox-carrusel"></span>
-                </button>
             </div>
-            <div class="panel-busqueda">
+
+            <form class="búsqueda" role="search" action="./catalgo.html">
                 <label for="b_catalogo" class="escondido">Buscar en el catálogo</label>
-                <input type="search" id="b_catalogo" placeholder="Encuentra libros por título, autor o materia.">
-                <a href="#recomendaciones" class="btn primary-button">Buscar</a>
+                <input type="search" id="b_catalogo" name="q"
+                    placeholder="Encuentra libros por título, autor o materia">
+                <button type="submit" class="btn primary-button">Buscar</button>
+            </form>
+
+            <div class="links-descubr">
+                <a href="#recomendaciones"><span>01</span><span><small>Destacado</small>Mundos infinitos</span></a>
+                <a href="#recomendaciones"><span>02</span><span><small>Novedad</small>Ficción actual</span></a>
+                <a href="#recomendaciones"><span>03</span><span><small>Archivo</small>Ciencia y saber</span></a>
+                <a href="#servicios"><span>04</span><span><small>Talleres</small>Club de lectura</span></a>
             </div>
         </section>
 
-        <section class="container-info" id="horarios">
-            <article class="info">
-                <span class="eyebrow">Horarios de atención</span>
-                <h2>Horarios</h2>
-                <p>Consulta los horarios de atención y pregunta por nuestros servicios de préstamo.</p>
-                <ul>
-                    <li>Lunes a Viernes <strong>08:00 - 20:00</strong></li>
-                    <li>Sábados <strong>09:00 - 18:00</strong></li>
-                    <li>Domingos <strong>10:00 - 14:00</strong></li>
+        <section class="container info" id="horarios">
+            <article class="info-card">
+                <div class="card-top">
+                    <span class="titulito">Atención al público</span>
+                    <span class="status">Abierto hoy hasta las 20:00</span>
+                </div>
+                <h2>Horarios y disponibilidad semanal</h2>
+                <p>Consulta los horarios de atención y nuestros servicios de préstamo.</p>
+                <ul class="horario">
+                    <li><span>Lunes a viernes<small>Jornada completa y salas silenciosas</small></span><strong>08:00 - 20:00</strong></li>
+                    <li><span>Sábados<small>Préstamos y actividades familiares</small></span><strong>09:00 - 18:00</strong></li>
+                    <li><span>Domingos<small>Lectura, pausa y hemeroteca matinal</small></span><strong>10:00 - 14:00</strong></li>
                 </ul>
+                <!--Iconito de reloj dasi-->
+                <div class="nota-tarjeta"><span>Recepción disponible durante el horario de apertura</span><a href="#footer">Ver calendario completo →</a></div>
             </article>
-            <article class="info" id="ubicacion">
-                <span class="eyebrow">Ubicación y sede central</span>
+
+            <article class="info-card ubicación-tarjeta" id="ubicacion">
+                <span class="titulito">Ubicación y sede central</span>
                 <h2>Visítanos en el Centro Histórico</h2>
-                <p>Estamos en Paseo Cultural 14, Plaza Mayor. ¡Te esperamos!</p>
+                <p>Situada en el emblemático Caserón de las Letras, a pasos del tranvía municipal y con aparcamiento público gratuito para bibliotecarios.</p>
                 <!--Insertar MAPPAAAAAAAAAAAAA-->
-                <p>Paseo Cultural 14 - Plaza Mayor</p>
+                <div class="mapa">
+                    <span class="mapa-pin">⌖</span>
+                    <span>Paseo Cultural 14 · Plaza Mayor</span>
+                </div>
+                <div class="tarjeta-contacto">
+                    <!--Iconito de teléfono-->
+                    <a href="tel:+34912345678"><span class="icono-contacto">☎</span><span><small>Teléfono institucional</small>+34 912 345 678</span></a>
+                    <!--Iconito de mail-->
+                    <a href="mailto:info@bibliotech.org"><span class="icono-contacto mail-icon">✉</span><span><small>Correo electrónico</small>info@bibliotech.org</span></a>
+                </div>
             </article>
         </section>
 
-        <section class="contenido" id="servicios">
-            <div class="container">
-                <span class="eyebrow">Servicios a la comunidad</span>
+        <section class="contenido-b" id="servicios">
+            <div class="container seccion-contenido">
+                <span class="titulito">Lo que ofrecemos a la comunidad</span>
                 <h2>Servicios pensados para leer, crear y aprender</h2>
-                <p>Accede a los recursos de la biblioteca y participar en sus actividades.</p>
+                <p>Accede a todos nuestros recursos con tu carné municipal o solicita pases de lectura e investigación sin costo.</p>
                 <div class="servicios">
                     <article class="tarjeta-servicios">
+                        <span class="icono-servicios">▤</span>
+                        <span class="servicios-tag tag-verde">Préstamos activos</span>
                         <h3>Préstamo a domicilio</h3>
-                        <p>Lleva libros a casa y disfruta de nuevas lecturas.</p>
-                        <a href="#">Normativa y plazos</a>
+                        <p>Hasta 3 libros durante 15 días con posibilidad de renovación online sin necesidad de desplazarte.</p>
+                        <a href="#">Normativa y plazos ›</a>
                     </article>
                     <article class="tarjeta-servicios">
+                        <span class="icono-servicios icono-amarillo">▣</span>
+                        <span class="servicios-tag tag-amarillo">Zona silenciosa</span>
                         <h3>Salas de estudio y co-working</h3>
-                        <p>Espacios tranquilos para estudiar y trabajar.</p>
-                        <a href="#">Reservar un puesto</a>
+                        <p>Espacios silenciosos con wifi de alta velocidad, enchufes individuales en cada puesto y cabinas acústicas para llamadas breves.</p>
+                        <a href="#">Reservar un puesto ›</a>
                     </article>
                     <article class="tarjeta-servicios">
+                        <span class="icono-servicios icono-rosa">▣</span><!--QUÉ MONDÁ CON ESTO, SE VE SUPER IAAAAA, INVESTIGAR CÓMO CCCCCCAAAAAAAMMMMMMMMMBBBBBBBBBBIIIIIIIIIAAAAAAAAAARRRRRRRRRR-->
+                        <span class="servicios-tag tag-rosa">Dinamización</span>
                         <h3>Club de lectura y talleres</h3>
-                        <p>Encuentros para conversar, aprender y crear.</p>
-                        <a href="#">Agenda de actividades.</a>
+                        <p>Encuentros semanales para todas las edades, clubes de debate, talleres de escritura creativa y cuentacuentos infantiles.</p>
+                        <a href="#">Agenda de actividades ›</a>
                     </article>
                     <article class="tarjeta-servicios">
+                        <span class="icono-servicios icono-color">▤</span>
+                        <span class="servicios-tag tag-color">Acceso libre</span>
                         <h3>Hemeroteca y digital</h3>
-                        <p>Periódicos, revistas y recursos digitales.</p>
-                        <a href="#">Recursos disponibles</a>
+                        <p>Periódicos diarios locales y nacionales, revistas científicas, préstamo de e-readers y computadores de consulta multimedia gratuita.</p>
+                        <a href="#">Recursos disponibles ›</a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section class="container content-section" id="recomendaciones">
-            <span class="eyebrow">Selección del equipo de bibliotech-arios</span>
-            <h2>Recomendaciones destacadas de la semana</h2>
-            <p>Una selección para descubrir nuevas historias y autores.</p>
-            <div class="coleccion-libros">
+        <section class="container seccion-contenido recomendaciones" id="recomendaciones">
+            <span class="titulito">Selección del equipo de bibliotecarios</span><!--CAMBIAR LA CLASE titulito POR CEJITA OR SMT LIKE THAT-->
+            <div class="row-secciontitulo">
+                <div>
+                    <h2>Recomendaciones destacadas de la semana</h2>
+                    <p>Lecturas escogidas con esmero por nuestro personal técnico para despertar nuevas reflexiones en tu mesa de noche.</p>
+                </div>
+                <a href="./catalgo.html">Ver todo el catálogo (25.400+) →</a>
+            </div>
+            <div class="libros-pantalla">
                 <article class="tarjeta-libros">
-                    <div class="cubierta-libro cubierta1">Cien años de soledad</div>
+                    <div class="cubierta-libros cubierta-one"><span class="isbn">ISBN 978-84-376</span><span class="cubierta-symbol">ⓘ</span><span class="availability">Disponible</span></div>
+                    <span class="book-category">Ficción clásica</span>
                     <h3>Cien años de soledad</h3>
-                    <p>Gabriel García Márquez</p>
-                    <a href="./catalgo.html">Ver en catálogo</a>
+                    <p>Gabriel García Márquez<br><small>Editorial Sudamericana · 1967</small></p>
+                    <a href="./catalgo.html">; Ver en catálogo</a>
                 </article>
                 <article class="tarjeta-libros">
-                    <div class="cubierta-libro cubierta2">Breve historia del tiempo</div>
-                    <h3>Breve historia del tiempo</h3>
-                    <p>Stephen Hawking</p>
-                    <a href="./catalgo.html">Ver en
-                        catálogo</a><!--ESTA ESCRITO catalgo EN VEZ DE catAlogo BC EN EL REPOSITORIO EL ARCHIVO ESTÁ CON UN ERROR, ENTONCES PARA QUE CUANDO SE HAGA LA IMPLEMENTACIÓN DE TODAS LAS PARTES, SE CONECTE CORRECTAMENTE IGUAL; PENDIENTE DE REVISIÓNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN-->
+                    <div class="cubierta-libros cubierta-two"><span class="isbn">ISBN 978-84-670</span><span class="cubierta-symbol">★</span><span class="availability">Disponible</span></div>
+                    <span class="book-category">Astronomía y saber</span>
+                    <h3>Cosmos: Evolución y Vida</h3>
+                    <p>Carl Sagan<br><small>Editorial Planeta · 1980</small></p>
+                    <a href="./catalgo.html">; Ver en catálogo</a>
                 </article>
                 <article class="tarjeta-libros">
-                    <div class="cubierta-libro cubierta1">La Odisea</div>
-                    <h3>La Odisea</h3>
-                    <p>Homero</p>
-                    <a href="./catalgo.html">Ver en catálogo</a>
+                    <div class="cubierta-libros cubierta-three"><span class="isbn">ISBN 978-84-493</span><span class="cubierta-symbol">◉</span><span class="availability">2 disponibles</span></div>
+                    <span class="book-category">Historia universal</span>
+                    <h3>Sapiens: Breve Historia</h3>
+                    <p>Yuval Noah Harari<br><small>Editorial Debate · 2014</small></p>
+                    <a href="./catalgo.html">; Ver en catálogo</a>
                 </article>
                 <article class="tarjeta-libros">
-                    <div class="cubierta-libro cubierta1">####################</div>
-                    <h3>######PENDIENTE AÑADIR LIBRO DEL CATALOGO######</h3>
-                    <p>########################</p>
-                    <a href="./catalgo.html">Ver en catálogo</a>
+                    <div class="cubierta-libros cubierta-four"><span class="isbn">ISBN 978-84-946</span><span class="cubierta-symbol">▤</span><span class="availability">Disponible</span></div>
+                    <span class="book-category">Novela histórica</span>
+                    <h3>Hamnet: La Ausencia</h3>
+                    <p>Maggie O’Farrell<br><small>Libros del Asteroide · 2021</small></p>
+                    <a href="./catalgo.html">; Ver en catálogo</a><!--QUITAR ESE NBSP ESO ES CASICASI QUE QUEMAR CODIGO OMG QUE SHAME PARA LA IA-->
                 </article>
             </div>
+            <!--ESTA ESCRITO catalgo EN VEZ DE catAlogo BC EN EL REPOSITORIO EL ARCHIVO ESTÁ CON UN ERROR, ENTONCES PARA QUE CUANDO SE HAGA LA IMPLEMENTACIÓN DE TODAS LAS PARTES, SE CONECTE CORRECTAMENTE IGUAL; PENDIENTE DE REVISIÓNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN-->
         </section>
 
         <section class="container loan-section">
-            <span class="eyebrow">Sencillo y gratuito</span>
+            <span class="titulito">Trámite sencillo y gratuito</span>
             <h2>¿Cómo funciona el préstamo de libros?</h2>
-            <p>En tres sencillos pasos puedes llevar tu próxima lectura a casa.</p>
-            <div class="pasos">
-                <article>1 <h3>Elige en el catálogo</h3>
-                    <p>Explora y selecciona tus próximas lecturas</p>
-                </article>
-                <article>2 <h3>Completa la solicitud</h3>
-                    <p>Solicita el ejemplar que quieres llevar.</p>
-                </article>
-                <article>3 <h3>Retira con tu documeneto de identidad</h3>
-                    <p>Recoge tu préstamo en la biblioteca.</p>
-                </article>
+            <p>Ten tu próxima lectura entre las manos en cuestión de tres pasos rápidos y transparentes.</p>
+            <div class="steps-grid">
+                <article><span class="step-number">1</span><h3>Elige en el catálogo</h3><p>Explora en línea nuestro fondo bibliográfico, consulta la disponibilidad en tiempo real y revisa sinopsis o críticas.</p><small>25.000+ títulos</small></article>
+                <article><span class="step-number">2</span><h3>Completa la solicitud</h3><p>Haz clic en “Reservar” o solicita tu ejemplar directamente en el mostrador si nos visitas en persona.</p><small>Reserva inmediata</small></article>
+                <article><span class="step-number step-pink">3</span><h3>Retira con tu DNI</h3><p>Acércate al mostrador principal con tu documento de identidad o carné digital de lector para llevarte tus libros a casa.</p><small>15 días renovables</small></article>
             </div>
-
-            <a href="#" class="btn primary-button">Solicitar carné gratuito</a>
+            <a href="#" class="btn primary-button">; Solicitar carné gratuito</a>
         </section>
     </main>
 
-
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-5">
-                    <h3> <img src="" alt="logo de bibliotech">BiblioTech</h3>
-                    <p>Biblioteca Municipal y Comunitaria. Un refugio de conocimiento,lectura compartida y dinamización
-                        cultural para toda la ciudadanía.</p>
+    <!--ARREGLAR ESTE FOOTER PARA QUE QUEDE LINDOOOOOOOOOOOOO-->
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h2 class="footer-brand"><img src="./img/bibliotech_fondo_transparente.webp" alt=""> BiblioTech</h2>
+                    <p>Biblioteca Municipal y Comunitaria. Un refugio de conocimiento, lectura compartida y dinamización cultural para toda la ciudadanía.</p>
                     <!--Incluir un iconito de check y luego la letra a continuación-->
-                    <p>Red Municipal de Bibliotecas y Archivos</p>
+                    <p class="network-note">; Red Municipal de Bibliotecas y Archivos</p>
                 </div>
-                <div class="col-md-3">
+                <div>
                     <h3>Horarios de Atención</h3>
                     <!--Iconito de reloj-->
-                    <p>Lunes a Sábado</p>
-                    <p>8:00 - 20:00 hrs</p>
+                    <p class="footer-label">; Lunes a Sábado</p>
+                    <p>08:00 - 20:00 hrs</p>
                     <!--iconito de reloj dasi-->
-                    <p>Domingos</p>
+                    <p class="footer-label">; Domingos</p>
                     <p>10:00 - 14:00 hrs</p>
                 </div>
-                <div class="col-md-2">
+                <div>
                     <h3>Enlaces Rápidos</h3>
-                    <a href="">Inicio</a>
-                    <a href="">Catálogo de libros</a>
-                    <a href="">Normativa de préstamos</a>
-                    <a href="">Portal de Administración</a>
+                    <a href="#inicio">Inicio</a>
+                    <a href="./catalgo.html">Catálogo de libros</a>
+                    <a href="#horarios">Normativa de préstamos</a>
+                    <a href="#">Portal de Administración</a>
                 </div>
-                <div class="col-md-2">
+                <div>
                     <h3>Ubicación</h3>
                     <!--iconito de ubicación-->
-                    <p>Paseo cultural 14, Plaza Mayor</p>
-                    <!--iconito de teléfono--> <a href="">+34 912 345 678</a>
-                    <!--iconito de mail--> <a href="">info@bibliotech.org</a>
+                    <p>; Paseo Cultural 14, Plaza Mayor</p>
+                    <!--iconito de teléfono-->
+                    <a href="tel:+34912345678">; +34 912 345 678</a>
+                    <!--iconito de mail-->
+                    <a href="mailto:info@bibliotech.org">; info@bibliotech.org</a>
                 </div>
             </div>
-            <section class="row">
-                <section class="col-md-8">
-                    <!--Iconito de copyright seguido del siguiente texto-->
-                    <p>2025 BiblioTech Biblioteca Municipal. Todos los derechos reservados.</p>
-                </section>
-                <section class="col-md-2">
-                    <p>Políticas de Privacidad</p>
-                </section>
-                <section class="col-md-2">
-                    <p>Términos de Servicio</p>
-                </section>
-            </section>
+            <div class="footer-bottom">
+                <!--Iconito de copyright seguido del siguiente texto-->
+                <p>© 2025 BiblioTech Biblioteca Municipal. Todos los derechos reservados.</p>
+                <div><a href="#">Políticas de Privacidad</a><a href="#">Términos de Servicio</a></div>
+            </div>
         </div>
-
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> <!--Según la guía que seguí, este script sirve para que el menú móvil y el carrusel funcionen normalmente-->
 </body>
 
