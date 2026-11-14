@@ -16,8 +16,9 @@ function verificarlogin() {
         window.location.href = "./login.html";
 }
 function salir() {
+    cerrar = document.getElementById("cerrar-sesion");
     sessionStorage.clear();
-    window.location = "../index.html"
+    window.location.href = "./index.html";
 }
 
 const botoncambiar = document.getElementById("botontema")
