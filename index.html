@@ -26,9 +26,9 @@
 
                 <div class="collapse navbar-collapse" id="navegacion-principal">
                     <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-                        <li class="nav-item">
+                        <!--<li class="nav-item">
                             <a href="#inicio" class="btn btn-sm">Inicio</a>
-                        </li>
+                        </li>-->
                         <li class="nav-item">
                             <a href="./pages/catalgo.html" class="btn btn-sm">Catálogo de libros</a>
                         </li>
@@ -98,7 +98,7 @@
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    
+                    <!--si este span no se escribe tal cual, no aparecerán las flechitas de control para pasar la diapositiva.-->
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                     <!--los data-bs-target es lo que apunta a un parámetro u otro, por ejemplo, wn este caso estamos en la sección que genera el carrusel, al principio de la sección está el parámetro data-bs-RIDE con el atributo de carousel, los data-bs-target hacen como un href cuando se le pone el # y lo refieren al ride que funciona como un id de lo que se está haciendo, idk jekj-->
@@ -108,7 +108,6 @@
             </div>
 
             <form action="./pages/catalgo.html" role="search" class="busqueda">
-                <label for="catalogo" class="escondido">Buscar en catálogo</label>
                 <input type="search" id="catalogo" placeholder="Encuentra libros por título, autor o materia">
                 <button type="submit" class="btn primary-button">Buscar</button>
             </form>
