@@ -41,6 +41,11 @@ p {
     object-fit: cover;    
 }
 
+.seccion-ppal {
+    padding-top:1.25rem;
+    padding-bottom: 1.5rem;
+}
+
 .btn.btn-sm:hover { /*--------------ESTILO COMÚN-------------*/
     background-color: var(--boton-principal);
     border-radius: 90px;
@@ -60,6 +65,13 @@ p {
 
 #carousel .carousel-item{
     position: relative;
+}
+
+#carousel .carousel-item img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover; /*este atributo mantiene las proporciones de cada imagen y recorta lo que no quepa */
 }
 
 #carousel .carousel-item::after{ /*--Este estilo otorga un efecto visual al final de cada carrusel item*/
@@ -159,3 +171,54 @@ p {
     background-color: var(--);
 }
 
+.busqueda {
+    position: relative; /*Este atributo permite que se efectúe el z-index 3, si no se pone el position relative, aunque se ponga el z-index aún se va a ver por detrás del carrusel*/
+    z-index: 3;
+    width: 75%;
+    box-shadow: 0 0.35rem 0.9rem var(--indicador-activo);
+    margin: -1rem auto 0;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+}
+
+.busqueda input {
+    border: none;
+    border-radius: 999px;
+    padding: 0.5rem;
+    color: var(--color-neutro);
+    font-size: 0.8rem;
+    width: min(500px, 85%);
+}
+
+.busqueda button {
+    background-color: var(--boton-oscuro);
+    border-radius: 999px;
+    color: var(--color-secundario);
+    width: min(100px, 20%);
+}
+
+.busqueda button:hover {
+    background-color: var(--boton-principal-texto);
+    border-radius: 999px;
+    color: var(--boton-principal);
+    width: 25%;
+}
+
+.descubrir {
+    display:grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: min(800px, 95%);
+}
+
+.descubrir a {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.3rem 0.65rem;
+    color: var(--color-neutro);
+    font-size: 0.7rem;
+    text-decoration: none;/*VOY AQUIIIII*/
+}
