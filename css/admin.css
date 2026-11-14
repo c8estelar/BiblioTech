@@ -3,10 +3,10 @@ body{
     font-family:var(--fuente-titulos),var(--fuente-texto);
 }
 .administrador{
-    background-color: #D6CE93 ;
+    background-color: #F6F5E4;
 }
 .admi{
-    background-color: #D6CE93;
+    background-color: #F6F5E4;
     color: #6C6F4E;
 }
 .btn-biblio{
