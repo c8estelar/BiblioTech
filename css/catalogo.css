@@ -1,7 +1,7 @@
 @import url(base.css);
 
 main{
-    background-color:var(--fondo-cajas-info);
+    background-color:var(--fondo-general)
 }
 header{
     background-color: var(--fondo-general);
@@ -12,4 +12,17 @@ header{
     height: 220px;
     object-fit: contain;
     padding: 10px;
+}
+.footer-bottom{
+    text-align: center;
+}
+
+.card{
+    background-color: var(--fondo-tarjetas);
+}
+.btn{
+    background-color: var(--boton-oscuro);
+}
+footer{
+    
 }

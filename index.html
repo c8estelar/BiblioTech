@@ -26,9 +26,9 @@
 
                 <div class="collapse navbar-collapse" id="navegacion-principal">
                     <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-                        <!--<li class="nav-item">
+                        <li class="nav-item">
                             <a href="#inicio" class="btn btn-sm">Inicio</a>
-                        </li>-->
+                        </li>
                         <li class="nav-item">
                             <a href="./pages/catalgo.html" class="btn btn-sm">Catálogo de libros</a>
                         </li>
@@ -97,38 +97,27 @@
                 </div>
 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <!--si este span no se escribe tal cual, no aparecerán las flechitas de control para pasar la diapositiva.-->
+                    <span class="carrusel-prev-icon" aria-hidden="true"></span>
+                    <span class="escondido">Prev</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
                     <!--los data-bs-target es lo que apunta a un parámetro u otro, por ejemplo, wn este caso estamos en la sección que genera el carrusel, al principio de la sección está el parámetro data-bs-RIDE con el atributo de carousel, los data-bs-target hacen como un href cuando se le pone el # y lo refieren al ride que funciona como un id de lo que se está haciendo, idk jekj-->
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                   
+                    <span class="carrusel-next-icon" aria-hidden="true"></span>
+                    <span class="escondido">Sig.</span>
                 </button>
             </div>
 
             <form action="./pages/catalgo.html" role="search" class="busqueda">
+                <label for="catalogo" class="escondido">Buscar en catálogo</label>
                 <input type="search" id="catalogo" placeholder="Encuentra libros por título, autor o materia">
                 <button type="submit" class="btn primary-button">Buscar</button>
             </form>
 
             <div class="descubrir">
-                <article>
-                    <a href="#recomendaciones"><h3>Destacado</h3></a>
-                    <p>Mundos infinitos</p>
-                </article>
-                <article>
-                    <a href="#recomendaciones"><h3>Novedades</h3></a>
-                    <p>Ficción actual</p>
-                </article>
-                <article>
-                    <a href="#recomendaciones"><h3>Archivo</h3></a>
-                    <p>Ciencia y saber</p>
-                </article>
-                <article>
-                    <a href="#servicios"><h3>Talleres</h3></a>
-                    <p>Club de lectura</p>
-                </article>
+                <a href="#recomendaciones"><span><small>Destacado</small>Mundos infinitos</span></a>
+                <a href="#recomendaciones"><span><small>Novedad</small>Ficción actual</span></a>
+                <a href="#recomendaciones"><span><small>Archivo</small>Ciencia y saber</span></a>
+                <a href="#servicios"><span><small>Talleres</small>Club de lectura</span></a>
             </div>           
         </section>
 
@@ -190,7 +179,7 @@
                 <p>Accede a todos nuestros recursos con tu carné municipal o solicita pases de lectura e investigación sin costo.</p>
                 <div class="tarjetas-servicios">
                     <article class="card-servicio">
-                        <span class="iconos"><i class="bi bi-bicycle"></i></span>
+                        <span><i class="bi bi-bicycle"></i></span>
                         <span class="titulito-servicios tag-verde">Préstamos activos</span>
                         <h3>Préstamos a domicilio</h3>
                         <p>Hasta 3 libros durante 15 días con posibilidad de renovación online sin necesidad de desplazarse.</p>
@@ -198,7 +187,7 @@
                         <!--AÑADIR UN MODAL CON NORMATIVA SIMULADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
                     </article>
                     <article class="card-servicio">
-                        <span class="iconos"><i class="bi bi-person-video3"></i></span>
+                        <span><i class="bi bi-person-video3"></i></span>
                         <span class="titulito-servicios tag-amarillo">Zona silenciosa</span>
                         <h3>Salas de estudio y co-working</h3>
                         <p>Espacios silenciosos con wifi de alta velocidad, enchufes individuales en cada puesto y cabinas acústicas para llamadas breves.</p>
@@ -206,7 +195,7 @@
                         <!--AÑADIR UN MODAL CON NORMATIVA SIMULADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
                     </article>
                     <article class="card-servicio">
-                        <span class="iconos"><i class="bi bi-person-raised-hand"></i></span>
+                        <span><i class="bi bi-person-video3"></i></span>
                         <span class="titulito-servicios tag-rosadito">Esparcimiento y dinamización</span>
                         <h3>Club de lectura y talleres</h3>
                         <p>Encuentros semanales para todas las edades, clubes de debate, talleres de escritura creativa y cuenta cuentos infantiles.</p>
@@ -214,7 +203,7 @@
                         <!--AÑADIR UN MODAL CON NORMATIVA SIMULADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-->
                     </article>      
                     <article class="card-servicio">
-                        <span class="iconos"><i class="bi bi-person-arms-up"></i></span>
+                        <span><i class="bi bi-person-video3"></i></span>
                         <span class="titulito-servicios tag-nice">Acceso libre</span>
                         <h3>Hemeroteca y digitales</h3>
                         <p>Periódicos diarios locales y nacionales, revistas científicas, préstamos de e-readers y computadores de consulta multimedia gratuita.</p>
