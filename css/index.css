@@ -2,6 +2,7 @@
 
 :root {
     --verde-claro: #c8cd8b;
+    --rosado-claro: #f8e5e6;
 }
 *{
     box-sizing: border-box;
@@ -307,15 +308,57 @@ p {
     line-height: 1.45;
 }
 
-.card-atencion-inferior {
+.card-atencion-inferior a{
+    color: var(--color-neutro);
+    display: flex;
+    flex-wrap: wrap;
     margin: 1.5rem auto 0.5rem;
+}
+
+.contenedor-mapa {
+    display: flex;
+    min-height: 95px;
+    align-items: end;
+    gap: 0.35rem;
+    margin-top: 0.6rem;
+    padding: 0.6rem;
+    border: 1px solid #d5d8c8;
+    border-radius: 0.5rem;
+    background-image: url(./img/ubicacion-libr.png);
+    color: var(--olive);
+    font-size: 0.62rem;
+}
+
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.4rem;
+}
+
+.contacto a {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    background: var(--surface);
+    color: var(--ink);
+    font-size: 0.63rem;
+    text-decoration: none;
+}
+
+.contacto small {
+    display: block;
+    color: var(--muted);
+    font-size: 0.54rem;
 }
 
 /*SECCIÓN DE SERVICIOOOOOOOOOOOOOOOSSSS*/
 
 .tarjetas-servicios {
     display:grid;
-    grid-template-columns: repeat(4, minmax (0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 0.85rem;
     margin-top: 1.5rem;
 }
@@ -356,10 +399,10 @@ p {
     color: var(--color-neutro);
 }
 
-.bi.bi-person-raised-hand, .titulito-servicios.tag-rosadito {
+.bi.bi-person-walking, .titulito-servicios.tag-rosadito {
     padding: 0.4rem 0.65rem;
     border-radius: 0.5rem;
-    background: var(--fondo-panel-lateral);
+    background: var(--rosado-claro);
     color: var(--color-neutro);
 }
 
@@ -371,7 +414,8 @@ p {
 }
 
 .titulito-servicios {
-    font-size: smaller;
+    font-size: 0.5rem;
+    margin-top: 1rem;
     font-weight: bold;
 }
 
@@ -386,4 +430,11 @@ p {
     font-size: 0.6rem;
     line-height: 1.5;
     color: var(--texto-placeholder);
+}
+
+.card-servicio a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: var(--color-neutro);
+    margin-top: auto;
 }
